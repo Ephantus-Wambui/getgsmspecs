@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('layouts/head'); -%>
+
+<body>
+
+    <%- include('layouts/nav'); -%>
+
+    <div class="container">
+
+        <% for (var i = 0; i < gsm.length; i++) {%>
+
+            <div class="thumb-container">
+              <a href="/specs/<%= gsm[i].slug%>">
+                <%= gsm[i].title %>
+              </a>
+            </div>
+
+        <% } %>
+
+        </div>
+
+</body>
+
+<%- include('layouts/footer'); -%>
+
+</html>
